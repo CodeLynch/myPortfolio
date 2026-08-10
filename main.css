@@ -239,7 +239,7 @@
       }
 
       .all-container {
-          height: 40vh;
+          height: 80vh;
       }
   }
 
@@ -274,6 +274,10 @@
 
       .content-info-body {
           font-size: 12px;
+      }
+
+      .all-container {
+          height: auto;
       }
   }
 
