@@ -23,6 +23,17 @@
       color: aqua !important;
   }
 
+  .logo {
+      height: 100%;
+      width: 342px;
+  }
+
+  .portrait {
+      width: 132px;
+      height: 132px;
+
+  }
+
   .party-container {
       display: flex;
       flex-direction: row;
@@ -228,7 +239,7 @@
       }
 
       .all-container {
-          height: 100vw;
+          height: 40vh;
       }
   }
 
@@ -239,9 +250,30 @@
   }
 
   @media only screen and (max-width: 727px) {
+      .logo {
+          width: 150px;
+      }
+
+      .portrait {
+          height: 72px;
+          width: 72px;
+      }
+
+      .profile-menu-section-header-text-row {
+          font-size: 10px !important;
+      }
+
       .profile-menu-section-list-container>ul>li {
           font-size: 12px;
           margin: 0px 5px 0px 5px;
+      }
+
+      .content-info-header {
+          font-size: 14px;
+      }
+
+      .content-info-body {
+          font-size: 12px;
       }
   }
 
@@ -253,5 +285,37 @@
       .profile-menu-section-list-container>ul>li {
           font-size: 10px;
           margin: 0px 2px 0px 5px;
+      }
+  }
+
+  @media only screen and (max-width: 512px) {
+      .logo {
+          width: 90px;
+      }
+
+      .portrait {
+          height: 72px;
+          width: 72px;
+      }
+
+      .profile-menu-section-header {
+          flex-direction: column;
+      }
+
+      .profile-menu-section-header-text-row {
+          font-size: 8px !important;
+      }
+
+      .profile-menu-section-list-container>ul>li {
+          font-size: 10px;
+          margin: 0px 5px 0px 5px;
+      }
+
+      .content-info-header {
+          font-size: 14px;
+      }
+
+      .content-info-body {
+          font-size: 12px;
       }
   }
