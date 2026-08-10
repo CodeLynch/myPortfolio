@@ -1,424 +1,287 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Portfolio site of John Vergil Aparri">
-		<meta name="keywords" content="John Vergil Aparri, Portfolio, Programmer, Web Developer, Coder, Software Developer, Software Engineer, Game Developer, Pixel Art, HTML, CSS, JavaScript">
-		<meta name="author" content="John Vergil Aparri">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="google-site-verification" content="doLSBD1892cewiOg6vw7l1x_qkoICxokgJ8HhPz4FJg" />
-		<title>John Vergil Aparri</title>
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/x-icon" href="images/myIcon.png">
-		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
-		<meta name="viewport" content="width=device-width" />
-		
-	</head>
-	<body>
-		<div class="container" height="100vh" width="100vw" style="display: flex; justify-content: center; padding: .2em; flex-direction: column; align-items: center;">
-			<div class="header">
-				<img height="100%" width="55%" src="images/myLogoBG.gif" alt="logo"/>
-			</div>
-			
-			<!-- Home -->
-			<div id="homeContent" class="choicesContainer">
-				<div class="contentWrapper" >
-					<div class="choicebox" 
-					onmouseover="newImg('proj', 'images/projectIconH.gif')" 
-					onmouseleave="newImg('proj', 'images/projectIcon.gif')" 
-					onclick="navigate('projectContent', 'homeContent', 'aboutContent', 'contactContent')
-					changeDialogue('project')">
-						<img id="proj" height="65%" src="images/projectIcon.gif"/>
-						<span class="homeLabels">My Projects</span>
-					</div>
-					<div  class="choicebox" 
-					onmouseover="newImg('am', 'images/aboutmeIconH.gif')" 
-					onmouseleave="newImg('am', 'images/aboutmeIcon.gif')"
-					onclick="navigate('aboutContent', 'homeContent', 'projectContent', 'contactContent')
-					changeDialogue('about')">
-						<img id="am" height="65%" src="images/aboutmeIcon.gif"/>
-						<span class="homeLabels">About Me</span>
-					</div>
-					<div class="choicebox"  
-					onmouseover="newImg('cont', 'images/contactIconH.gif')" 
-					onmouseleave="newImg('cont', 'images/contactIcon.gif')"
-					onclick="navigate('contactContent', 'homeContent', 'aboutContent', 'projectContent')
-					changeDialogue('contact')">
-						<img id="cont" height="65%" src="images/contactIcon.gif"/>
-						<span class="homeLabels">Contact</span>	
-					</div> 
-				</div>
-			</div>
-			<!-- Project -->
-			<div class="choicesContainer"
-			style="display: none; justify-content: left; padding: 1em 3em 1em 3em;
-			height: auto;
-			flex-direction: column;"
-			id="projectContent" >
-				<div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
-					<span
-					style="padding-bottom: 7px;"
-					class="backbutton"
-					onclick="navigate('homeContent', 'projectContent', 'aboutContent', 'contactContent')
-					changeDialogue('home')"
-					> < </span>
-					<h2 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 2px;">My Projects</h2>
-				</div>
-				<div>
-					<!-- DataMate -->
-					<div style="padding: 1.5em;">
-						<div class="projectHeader">
-							<h3 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 0; align-self: center;">DataMate</h4>
-							<div style="display: flex; width: fit-content; align-items: end; justify-content: end; padding: .2em;">
-								<a class="projectLink" href="https://github.com/CodeLynch/DataMate_Frontend" 
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/github.png" height="14px" width="14px"/>
-									<img src="images/githubH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Frontend Repository</span>
-								
-								</a> 
-								<a class="projectLink" href="https://github.com/CodeLynch/DataMate_Backend" target="_blank">
-									<div class="icons">
-										<img src="images/github.png" height="14px" width="14px"/>
-										<img src="images/githubH.png" height="14px" width="14px"/>
-									</div>
-									<span style="align-self: center;">Backend Repository</span>
-								</a>
-							</div>
-						</div>
-						<hr style="color: aquamarine; margin: .1em 0 .1em 0;"/>
-						
-						<div style="display: flex; flex-direction: column; width: fit-content;">
-						</div>
-						<p class="projectDesc">
-							A Group effort, this is a <span class="highlight"> React application</span> with a <span class="highlight">Springboot backend</span>. <span class="highlight">DataMate</span> is meant to help <span class="highlight">MSMEs (Micro Small Medium Enterprises)</span> transition from using logbooks and spreadsheets to a secure database and manage their data efficiently.
-						</p>
-						
-						<div class="projectImgs">
-							<img  src="images/DataMate/DMHome.PNG" >
-							<img  src="images/DataMate/DMLogin.PNG" > 
-						</div>
-					</div>
-					
-					<!-- 2FA -->
-					<div style="padding: 1.5em;">
-						<div class="projectHeader">
-							<h3 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 0; align-self: center;">2FA App</h4>
-							<div style="display: flex; width: fit-content; align-items: end; justify-content: end; padding: .2em;">
-								<a class="projectLink" href="https://github.com/CodeLynch/2FA-App" 
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/github.png" height="14px" width="14px"/>
-									<img src="images/githubH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Repository</span>
-								
-								</a> 
-							</div>
-						</div>
-						<hr style="color: aquamarine; margin: .1em 0 .1em 0;"/>
-						<div style="display: flex; flex-direction: column; width: fit-content;">
-						
-						</div>
-						<p class="projectDesc">
-							A simple solo project all that implements <span class="highlight">two-factor authentication</span>. Made with <span class="highlight">React</span> for the frontend and used <span class="highlight">ExpressJs</span> for the backend. I also played around with <span class="highlight">CSS</span> in this project. 
-						</p>
-						
-						<div class="projectImgs">
-							<img src="images/2FA-App/2Flogin.PNG" >
-							<img src="images/2FA-App/2Fotp.PNG" > 
-						</div>
-					</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio site of John Vergil Aparri" />
+    <meta
+      name="keywords"
+      content="John Vergil Aparri, Portfolio, Programmer, Web Developer, Coder, Software Developer, Software Engineer, Game Developer, Pixel Art, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="John Vergil Aparri" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="doLSBD1892cewiOg6vw7l1x_qkoICxokgJ8HhPz4FJg"
+    />
+    <title>John Vergil Aparri</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="images/myIcon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container"
+      height="100vh"
+      width="100vw"
+      style="
+        display: flex;
+        justify-content: center;
+        padding: 0.2em;
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div class="header">
+        <img height="100%" width="342px" src="images/myLogoBG.gif" alt="logo" />
+      </div>
 
-					<!-- SurvivalPrep -->
-					<div style="padding: 1.5em;">
-						<div class="projectHeader">
-							<h3 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 0; align-self: center;">SurvivalPrep</h4>
-							<div style="display: flex; width: fit-content; align-items: end; justify-content: end; padding: .2em;">
-								<a class="projectLink" href="https://github.com/CodeLynch/SurvivalPrep-FrontEnd" 
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/github.png" height="14px" width="14px"/>
-									<img src="images/githubH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Frontend Repository</span>
-								
-								</a> 
-								<a class="projectLink" href="https://github.com/CodeLynch/SurvivalPrep-BackEnd" target="_blank">
-									<div class="icons">
-										<img src="images/github.png" height="14px" width="14px"/>
-										<img src="images/githubH.png" height="14px" width="14px"/>
-									</div>
-									<span style="align-self: center;">Backend Repository</span>
-								</a>
-							</div>
-						</div>
-						<hr style="color: aquamarine; margin: .1em 0 .1em 0;"/>
-						<div style="display: flex; flex-direction: column; width: fit-content;">
-						
-						</div>
-						<p class="projectDesc">
-							This is my first group project using <span class="highlight"> React </span> and <span class="highlight">Springboot</span> as frontend and backend respectively. <span class="highlight">SurvivalPrep</span> centralizes the discussions within a community in order to prepare and recover from natural disasters by allowing users to create threads and posts so they can stay updated and have a platform to ask for assistance. 
-						</p>
-						
-						<div class="projectImgs">
-							<img src="images/SurvivalPrep/SPlogin.PNG">
-							<img src="images/SurvivalPrep/SPthread.PNG"> 
-						</div>
-					</div>
+      <div class="all-container">
+        <div class="party-container">
+          <div class="profile-menu-section">
+            <div class="profile-menu-section-header">
+              <img
+                width="132px"
+                height="132px"
+                src="images/meportraitIdle.gif"
+              />
+              <div class="profile-menu-section-header-text">
+                <div class="profile-menu-section-header-text-row">
+                  <span>JV</span>
+                  <span>Software Eng</span>
+                </div>
+                <div
+                  style="margin-left: 20px"
+                  class="profile-menu-section-header-text-row"
+                >
+                  <span>LV (YOE)</span>
+                  <span>2</span>
+                </div>
+                <div
+                  style="margin-left: 20px"
+                  class="profile-menu-section-header-text-row"
+                >
+                  <span>HP</span>
+                  <span>255/ 255</span>
+                </div>
+                <div
+                  style="margin-left: 20px"
+                  class="profile-menu-section-header-text-row"
+                >
+                  <span>MP</span>
+                  <span>64/ 64</span>
+                </div>
+              </div>
+            </div>
+            <div class="profile-menu-section-list-container">
+              <ul>
+                <li>
+                  <a id="about-section-nav" onclick="navigate('about-section')"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="skills-section-nav"
+                    onclick="navigate('skills-section')"
+                    >Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="projects-section-nav"
+                    onclick="navigate('projects-section')"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a id="links-section-nav" onclick="navigate('links-section')"
+                    >Links</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-info-section">
+            <div id="about-section">
+              <div class="content-info-header">About</div>
+              <p class="content-info-body">
+                Hi! I'm <span class="emphasize">JV</span>, I work as a
+                <span class="emphasize">software engineer</span>. Programming
+                has sort of been my "thing" since I discovered HTML and CSS as a
+                kid. I really enjoy the process of creating stuff and I am quite
+                dedicated to ensure that what I'm building has a quality that I
+                am satisfied with and not just something that is hastily put
+                together.
+                <br />
+                <br />
+                As you can see by the theme of my website, I am quite fond of
+                video games (especially old ones! I love
+                <span class="emphasize">pixel art</span>). So in my spare time,
+                I sometimes develop small games and join game jams.
+              </p>
+            </div>
+            <div id="skills-section">
+              <div class="content-info-header">Skills</div>
+              <div class="content-info-body">
+                Here are the primary languages I use:
+                <ul>
+                  <li>
+                    <span class="emphasize">Typescript</span> - most frequently
+                    used in work for web apps
+                  </li>
+                  <li>
+                    <span class="emphasize">Python</span> - for quick and light
+                    scripts/projects
+                  </li>
+                  <li>
+                    <span class="emphasize">C#</span> - mostly learned from
+                    experience with Unity
+                  </li>
+                  <li>
+                    <span class="emphasize">PHP</span> - used for work with
+                    Wordpress
+                  </li>
+                  <li>
+                    <span class="emphasize">Java</span> - used a lot in college
+                  </li>
+                  <li>
+                    <span class="emphasize">Lua</span> - most recent language im
+                    learning due to neovim
+                  </li>
+                </ul>
+                and the tools I utilize in building projects:
+                <ul>
+                  <li>
+                    <span class="emphasize">Neovim</span> - for fast text
+                    editing
+                  </li>
+                  <li>
+                    <span class="emphasize">Git</span> - essential for version
+                    control
+                  </li>
+                  <li>
+                    <span class="emphasize">Kubernetes</span> - encountered in
+                    my work, mostly handled deployment and log checking
+                  </li>
+                  <li>
+                    <span class="emphasize">Claude</span> - for agentic
+                    development
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="projects-section">
+              <div class="content-info-header">Projects</div>
+              <div class="content-info-body">
+                Personal projects I like to showcase:
+                <ul>
+                  <li>
+                    <h3 style="margin: 0">
+                      <a
+                        href="https://github.com/CodeLynch/SpookBot/"
+                        target="_blank"
+                      >
+                        <span class="emphasize">Spookbot</span>
+                      </a>
+                    </h3>
+                    a movie watchlist <span class="emphasize">Discord</span> bot
+                    helper written in Python using the
+                    <span class="emphasize">Discord.py</span> library. Created
+                    for personal use with my friends when we celebrate
+                    <span class="emphasize">"Spooktober"</span>
+                    where we watch horror movies each day of October.
+                  </li>
+                  <li>
+                    <h3 style="margin: 0">
+                      <a
+                        href="https://retrovii.itch.io/lightspeed-gunner"
+                        target="_blank"
+                      >
+                        <span class="emphasize">Light Speed Gunner</span>
+                      </a>
+                    </h3>
+                    An arcade platformer shooter game made in
+                    <span class="emphasize">Unity</span>. Has a setting of a
+                    cyberpunk dystopia like
+                    <span class="emphasize">Blade Runner</span>.
+                  </li>
+                  <li>
+                    <h3 style="margin: 0">
+                      <a href="https://retrovii.itch.io/jolen" target="_blank">
+                        <span class="emphasize">Jolen!</span>
+                      </a>
+                    </h3>
+                    A golf game where you flick
+                    <span class="emphasize">Jolens</span> instead, made in
+                    <span class="emphasize">Unity</span>. Made within a month
+                    for a game jam.
+                  </li>
+                  <li>
+                    <h3 style="margin: 0">
+                      <a
+                        href="https://retrovii.itch.io/diver-down"
+                        target="_blank"
+                      >
+                        <span class="emphasize">Diver Down</span>
+                      </a>
+                    </h3>
+                    Diving underwater game where you must collect treasures and
+                    avoid sharks. Made in <span class="emphasize">Godot</span>.
+                    Made within 4 days for a game jam.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="links-section">
+              <div class="content-info-header">Links</div>
+              <div class="content-info-body">
+                Feel free to reach out to me on these links:
+                <ul>
+                  <li>
+                    <a href="https://github.com/CodeLynch" target="_blank"
+                      ><span class="emphasize">GitHub</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://retrovii.itch.io/" target="_blank">
+                      <span class="emphasize">Itch.io</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://ph.linkedin.com/in/john-vergil-aparri-0056b4214"
+                      target="_blank"
+                    >
+                      <span class="emphasize">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span style="font-family: &quot;Press Start 2P&quot;; font-size: 10px"
+          >&copy;2026 John Vergil Aparri</span
+        >
+      </footer>
+    </div>
 
-					<!-- OneBlood -->
-					<div style="padding: 1.5em;">
-						<div class="projectHeader">
-							<h3 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 0; align-self: center;">OneBlood</h4>
-							<div style="display: flex; width: fit-content; align-items: end; justify-content: end; padding: .2em;">
-								<a class="projectLink" href="https://github.com/CodeLynch/BloodBankSystem" 
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/github.png" height="14px" width="14px"/>
-									<img src="images/githubH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Repository</span>
-								</a> 
-							</div>
-						</div>
-						<hr style="color: aquamarine; margin: .1em 0 .1em 0;"/>
-						<div style="display: flex; flex-direction: column; width: fit-content;">
-						
-						</div>
-						<p class="projectDesc">
-							A group project made with <span class="highlight"> Django</span>. <span class="highlight">OneBlood</span> is a bloodbank management system so it mostly focuses on <span class="highlight">CRUD</span> functions for blood donors, receivers, blood banks, and hospitals. 
-						</p>
-						
-						<div class="projectImgs">
-							<img src="images/OneBlood/login.PNG">
-							<img src="images/OneBlood/request.PNG"> 
-						</div>
-					</div>
-
-					<!-- Light Speed Gunner -->
-					<div style="padding: 1.5em;">
-						<div class="projectHeader">
-							<h3 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 0; align-self: center;">Light Speed Gunner</h4>
-							<div style="display: flex; width: fit-content; align-items: end; justify-content: end; padding: .2em;">
-								<a class="projectLink" href="https://itch.io/t/2935237/light-speed-gunner-an-arcade-cyberpunk-platformer" 
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/itch.png" height="14px" width="14px"/>
-									<img src="images/itchH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Dev Log</span>
-								<a class="projectLink" href="https://retrovii.itch.io/light-speed-gunner"
-								target="_blank">
-								
-								<div class="icons">
-									<img src="images/itch.png" height="14px" width="14px"/>
-									<img src="images/itchH.png" height="14px" width="14px"/>
-								</div>
-								<span style="align-self: center;">Game Page</span>
-								
-								</a> 
-							</div>
-						</div>
-						<hr style="color: aquamarine; margin: .1em 0 .1em 0;"/>
-						<div style="display: flex; flex-direction: column; width: fit-content;">
-						
-						</div>
-						<p class="projectDesc">
-							A retro cyberpunk platformer that I'm currently making on <span class="highlight">Unity</span>, This is a <span class="highlight">passion project</span> that I've started way back in 2020 during the pandemic as my first ever <span class="highlight"> game dev project</span>. I've been working on and off it since then and the first build can be downloaded on <a  class="highlight" href="https://retrovii.itch.io/light-speed-gunner"
-							target="_blank"> here</span></a>.
-						</p>
-						
-						<div class="projectImgs">
-							<img src="images/LSG/title.gif" >
-							<img src="images/LSG/select.gif" > 
-						</div>
-					</div>
-				
-				</div>
-			</div>
-			<!-- About Me -->
-			<div style="display: none; flex-direction: column; padding: 1em 3em 1em 3em; height: auto; justify-content: flex-start;" id="aboutContent" class="choicesContainer">
-				<div style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
-					<span
-					style="padding-bottom: 7px;"
-					class="backbutton"
-					onclick="navigate('homeContent', 'projectContent', 'aboutContent', 'contactContent')
-					changeDialogue('home')"
-					> < </span>
-					<h2 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 2px; float: left;">About Me</h2>
-				</div>
-				<div style="font-family: 'Press Start 2P'; color: aquamarine;">
-					<div class="aboutMeHeader">
-						<div>
-							<h4 style="margin: 5px; margin-bottom: 10px;">John Vergil Aparri</h4>
-							<p style="margin: 5px; font-size: 12px; color:hotpink; margin-bottom: 10px;">Web Developer</p>
-						</div>
-						<img src="images/compressedme.gif" class="aboutMeImg">
-					</div>
-					<hr style="color: aquamarine;"/>
-					<div>
-					<span class="aboutMeText">
-					I'm a <span class="cycle animated highlight" >full-stack web developer</span> who does some <span class="highlight">game development</span> as a hobby. I've always found creating things satisfying and fun which is why I have a passion for <span class="highlight""> designing, animating, and coding.</span> I'm a bit of a 
-					<span class="highlight">perfectionist </span> as I make sure the quality of my work is something I'm satisfied with and I dedicate a lot of time to ideas I really love.<br><br><br>
-					I'm knowledgeable and used the following  <span class="highlight">frameworks and tools </span>in my college projects: 
-					</span>
-					</div>
-					<div class="grid-container">
-						<div class="toolContainer">
-							<img src="images/expressjs.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Express.Js</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/nodejs.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Node.Js</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/springboot.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Springboot</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/django.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Django</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/react.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">React.js</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/git.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Git</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/anaconda.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Anaconda</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/postgresql.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">PostgreSQL</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/nextjs.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Next.js</p>
-						</div>
-						<div class="toolContainer">
-							<img src="images/nestjs.png"/>
-							<p style="font-family: Silkscreen; margin: 0px;">Nest.js</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Contact -->
-			<div style="display: none; flex-direction: column; padding: 1em 3em 1em 3em; height: 75vh; justify-content: flex-start;" id="contactContent" class="choicesContainer">
-				<div style="display: flex; width: 100%; justify-content: space-between; align-items: center; flex-direction: row;">
-					<span
-					style="padding-bottom: 7px;"
-					class="backbutton"
-					onclick="navigate('homeContent', 'projectContent', 'aboutContent', 'contactContent')
-					changeDialogue('home')"
-					> < </span>
-					<h2 style="font-family: 'Press Start 2P'; color: aquamarine; margin: 2px; float: left;">Got a message?</h2>
-				</div>
-				<div class="contactContentWrapper">
-					<div style="color: aquamarine; height: 100%; width: 100%;">
-					<form target="_blank" id="msgForm" style="height: 100%;" action="https://formspree.io/f/mnqkeorr" method="POST">
-						<div style="width: 100%; height: 100%;">
-								<div style="width: 80%; margin: .2em;">
-									<input required style="width: 100%; background-color: aquamarine;
-									font-family: 'Press Start 2P'; border: 0px; padding: .5em; font-size: 10px;" type="text" name="name" placeholder="Name"  />
-								</div>
-								<div style="width: 80%; margin: .2em;">
-									<input required style="width: 100%; background-color: aquamarine;
-									font-family: 'Press Start 2P'; border: 0px; padding: .5em; font-size: 10px;" type="text" name="email" placeholder="Email"  />
-								</div>
-								<div style="width: 80%; margin: .2em;">
-									<input required style="width: 100%; background-color: aquamarine;
-									font-family: 'Press Start 2P'; border: 0px; padding: .5em; font-size: 10px;" type="text" name="subject" placeholder="Subject"/>
-								</div>
-								<div style="margin: .2em; height: 65%;" >
-									<textarea required style="resize: none; width: 90%; background-color: aquamarine;
-									font-family: 'Press Start 2P'; border: 0px; padding: .5em; font-size: 10px; height: 100%;" name="message" placeholder="Message" rows="5" ></textarea>
-								</div>
-								<div style="width: 89%; margin: .2em; display: flex; justify-content: end;">
-									<input class="sendbutton" type="button" value="Send Message" onclick="openMessage()" />
-								</div>
-						</div>
-					</div>
-					<div style="display: flex; justify-content: end;">
-						<img id="mailImg" src="images/mail.png" />
-					</div>
-				</div>
-				
-			</div>
-
-
-			<div id="dialogueBox" style="display: none;" class="textBox">
-				<div style="width: 30%; display:flex; justify-content: end;">
-					<img id="me" style="--n:14s" class="talksprite" src="images/meportraitIdle.gif" alt="portrait" height="149px" width="170px"/>
-				</div>
-				<div class="dialoguePart" style="height: 149px;">
-					<div style="width: 100%; display: flex; justify-content: end;">
-						<span class="closeButton" onclick="closeDialogueBox()"> X </span>
-					</div>
-
-					<!-- Home Dialogue -->
-					<div style="overflow-x:hidden; max-height: 100%;">
-						<span id="dialogueContent" class="dtext type" style="--n:80">
-							Hi, I'm John Vergil Aparri. Welcome to my portfolio website!
-						</span>
-					</div>
-
-
-
-				</div>
-			</div>
-		<footer class="footer">
-			<div style="display: flex; flex-direction: column;">
-				<span style="font-size: 8px;">&copy;2023 John Vergil Aparri</span>
-				<div style="display: flex; justify-content: end;">
-					<a href="https://github.com/CodeLynch" target="_blank" style="margin: 0 .2em"><img src="images/github.png" height="14px" width="14px" /></a>
-					<a href="https://ph.linkedin.com/in/john-vergil-aparri-0056b4214" target="_blank" style="margin: 0 .2em"><img src="images/linkedin.png" height="14px" width="14px" /></a>
-				</div>
-			</div>
-			<img src="images/myLogoMini.png" style="margin: 0 .5em 0 .5em;" height="22px" width="75px" />
-		</footer>
-		</div>
-
-		<div class="notifButton" 
-		id="SideIcon"
-		onclick="openDialogueBox()"
-		onmouseover="newImg('mini_me', 'images/notifH.gif')"
-		onmouseleave="newImg('mini_me', 'images/notif.gif')">
-			<img id="mini_me" style="margin: .5em;" src="images/notif.gif"  />
-		</div>
-
-		<div id="ty" class="thankYouMsg" style="display: none;">
-			<div style="width: 100%; display: flex; justify-content: end;">
-				<span class="closeButton" onclick="closeMessage()"> X </span>
-			</div>
-			<div style="padding: 0 1em 1em 1em;">
-			<h1 style="font-family: Silkscreen; margin: 0;">THANK YOU</h1>
-			Thank you for sending a message!
-			I appreciate it :&gt;
-			</div>
-		</div>
-
-		<!-- Scripts -->
-			<script src="funcs.js"></script>
-			<!-- <script src="assets/js/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="funcs.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> -->
-	</body>
+  </body>
 </html>
